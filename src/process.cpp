@@ -13,7 +13,8 @@ using std::vector;
 
 // TODO: Return this process's ID
 //int Process::Pid() { return LinuxParser::Pids()[0]; }
-int Process::Pid() { return LinuxParser::Pids()[Process::index_]; }
+//int Process::Pid() { return LinuxParser::Pids()[Process::index_]; }
+int Process::Pid() { return pid_; }
 
 // TODO: Return this process's CPU utilization
 float Process::CpuUtilization() { return LinuxParser::CpuUtilization(Process::Pid()); }

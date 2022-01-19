@@ -72,7 +72,7 @@ void NCursesDisplay::DisplayProcesses(std::vector<Process>& processes,
   for (int i = 0; i < n; ++i) {
     //You need to take care of the fact that the cpu utilization has already been multiplied by 100.
     // Clear the line
-    processes[i].setIndex(i);
+    //processes[i].setIndex(i);
 
     mvwprintw(window, ++row, pid_column, (string(window->_maxx-2, ' ').c_str()));
 
