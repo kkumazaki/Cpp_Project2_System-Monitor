@@ -30,6 +30,7 @@ vector<Process>& System::Processes() {
     Process process(pid);
     processes_.push_back(process);
   }
+  //std::sort(processes_.begin(), processes_.end()); // somehow, the program stops...
   return processes_;
 }
 

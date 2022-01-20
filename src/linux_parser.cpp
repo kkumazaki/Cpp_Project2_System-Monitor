@@ -108,20 +108,20 @@ long LinuxParser::UpTime() {
 
 // TODO: Read and return the number of jiffies for the system
 // I don't use it
-long LinuxParser::Jiffies() { return 0; }
+//long LinuxParser::Jiffies() { return 0; } // changed after Feedback#1
 
 // TODO: Read and return the number of active jiffies for a PID
 // REMOVE: [[maybe_unused]] once you define the function
 // I don't use it
-long LinuxParser::ActiveJiffies(int pid) { return 0; }
+//long LinuxParser::ActiveJiffies(int pid) { return 0; } // changed after Feedback#1: This caused a warning
 
 // TODO: Read and return the number of active jiffies for the system
 // I don't use it
-long LinuxParser::ActiveJiffies() { return 0; }
+//long LinuxParser::ActiveJiffies() { return 0; } // changed after Feedback#1
 
 // TODO: Read and return the number of idle jiffies for the system
 // I don't use it
-long LinuxParser::IdleJiffies() { return 0; }
+//long LinuxParser::IdleJiffies() { return 0; } // changed after Feedback#1
 
 // TODO: Read and return CPU utilization
 // reference1: https://man7.org/linux/man-pages/man5/proc.5.html
