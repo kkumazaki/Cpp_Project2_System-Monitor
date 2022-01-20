@@ -27,8 +27,10 @@ vector<Process>& System::Processes() {
   processes_ = {};
   vector<int> pids = LinuxParser::Pids();
   for (int pid : pids) {
-    Process process(pid);
-    processes_.push_back(process);
+    if (LinuxParser::Command(pid)!="" && LinuxParser::Ram(pid)!="0"){ // change after Feedback#3
+      Process process(pid);
+      processes_.push_back(process);
+    }
   }
   //std::sort(processes_.begin(), processes_.end()); // somehow, the program stops...
   return processes_;
